@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --BG-COLOR: rgb(86, 69, 47);
+}
+
+body {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+.company {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--BG-COLOR);
+    height: 3.5rem;
+
+
+}
+
+.logo a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav_toggle {
+    color: whitesmoke;
+    width: 24px;
+    font-size: 24px;
+    /* border: 1px solid white; */
+}
+
+.nav_toggle i {
+    position: absolute;
+    top: 15px;
+}
+
+.nav__close,
+.nav__burger {
+    opacity: 0;
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    height: 8rem;
+    gap: 3rem;
+    position: absolute;
+    top: 16px;
+    right: 8rem;
+    color: whitesmoke;
+    /* border: 1px solid black; */
+}
+
+.navbar li {
+    list-style: none;
+    font-size: inherit;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.dropdown {
+    display: flex;
+    position: relative;
+    /* border: 1px solid black; */
+
+}
+
+.dropdown i {
+    padding-top: 0.2rem;
+    margin-left: 0.1rem;
+
+}
+
+
+
+.dropdown .user {
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem;
+    width: 8rem;
+    background-color: var(--BG-COLOR);
+
+}
+
+/* .dropdown .user li {
+    margin-bottom: 1rem;
+} */
+
+
+
+.dropdown .analytics {
+    /* display: flex; */
+
+    /* flex-direction: column; */
+    position: absolute;
+    top: 2rem;
+    left: 0.5rem;
+    /* width: 7rem; */
+    background-color: var(--BG-COLOR);
+    /* border: 1px solid black; */
+
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    /* border: 1px solid black; */
+
+}
+
+.dropdown .analytics li,
+.dropdown .user li {
+    margin-bottom: 1rem;
+}
+
+.dropdown .submenu li:last-child {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+
+}
+
+.dropdown .analytics .plus #add_icon {
+    margin-left: 1rem;
+
+}
+
+.sublink {
+    display: flex;
+    gap: 0.4rem;
+
+}
+
+.dropdown:hover .submenu {
+    display: block;
+    height: 8rem;
+    transition: width 0.3s ease-in-out;
+}
+
+.dropdown i.dropdown__arrow {
+    /* border: 1px solid black; */
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.dropdown:hover i.dropdown__arrow {
+    transform: rotateZ(180deg);
+}
+
+/* .dropdown i.dropdown__arrow {
+    transition: transform 0.3s ease;
+
+} */
+
+/* .plus {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+}
+
+.last_dropdown {
+    margin-left: 5px;
+    position: absolute;
+    top: 0;
+    left: 7rem;
+    background-color: blue;
+    width: 10rem;
+
+}
+
+
+
+.last_dropdown li a {
+    color: black;
+} */
+
+
+@media screen and (max-width: 1016px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        /* opacity: 0; */
+        display: block;
+        height: 70%;
+        gap: 3rem;
+        position: absolute;
+        top: 3.5rem;
+        left: 0;
+        /* right: 8rem; */
+        color: whitesmoke;
+        background-color: var(--BG-COLOR);
+        /* border: 1px solid black; */
+        width: 100%;
+        /* transition: top 0s, ease-in; */
+    }
+
+    .nav__burger {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+
+    .nav_link {
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .navbar .home {
+        margin-bottom: 5rem;
+    }
+
+    .dropdown:hover {
+        margin-bottom: 7rem;
+    }
+
+    li:has(.home) {
+        padding-bottom: 1.5rem;
+    }
+
+
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown:hover .analytics,
+    .dropdown:hover .user {
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+        /* padding-left: 1r; */
+        /* border: 1px solid black; */
+        height: 100px;
+        /* background-color: rgba(107, 95, 80, 0.301); */
+        width: 100%;
+        overflow: clip;
+    }
+
+    .dropdown:hover .analytics,
+    .dropdown:hover .user {
+        top: 4.5rem;
+    }
+
+    /* .navbar li {
+        list-style: none;
+        font-size: inherit;
+        padding-top: 10px;
+        /* Adjust the value according to the amount of space you want */
+
+    .dropdown:hover,
+    .dropdown .submenu {
+        background-color: rgba(107, 95, 80, 0.301)
+    }
+
+
+
+
+}

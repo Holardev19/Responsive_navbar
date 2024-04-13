@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Dropdown Menu</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="company">
+            <div class="logo">
+                <a href="#"><i class='bx bxs-planet'></i>Awesome</a>
+            </div>
+
+            <div class="nav_toggle">
+                <i class='bx bx-menu nav__burger'></i>
+                <i class='bx bx-x nav__close'></i>
+            </div>
+        </div>
+
+
+        <ul class="navbar">
+
+            <li>
+
+                <a href="#" class="nav_link home">Home</a>
+
+            </li>
+
+            <li>
+                <a href="#" class="nav_link">Company</a>
+            </li>
+
+            <li class="dropdown nav_link">Analytics
+                <i class='bx bx-chevron-down dropdown__arrow'></i>
+                <ul class="submenu analytics">
+                    <li>
+                        <a href="#" class="sublink"> <i class='bx bx-pie-chart-alt'></i>Overview</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="sublink"><i class='bx bx-transfer bx-rotate-90'></i>Transfer</a>
+                    </li>
+
+                    <li class="sublink plus">
+
+                        <i class='bx bx-bar-chart-alt-2'></i>Reports
+                        <i id="add_icon" class='bx bx-plus'>
+                        </i>
+
+
+                        <!-- <div>
+                            <ul class="last_dropdown">
+                                <li><a href="#">
+                                        <i class='bx bx-file'></i>Documents
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class='bx bx-money'></i>Payments
+                                    </a></li>
+                                <li><a href="#">
+                                        <i class='bx bx-money-withdraw'></i>Refunds
+                                    </a></li>
+
+
+                            </ul> </div> -->
+
+
+
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a href="#" class="nav_link">Products</a></li>
+
+            <li class="dropdown nav_link">Users
+                <i class='bx bx-chevron-down dropdown__arrow'></i>
+                <ul class="submenu user">
+                    <li><a href="#" class="sublink">
+                            <i class='bx bx-user'></i>
+                            Profiles
+                        </a>
+                    </li>
+
+
+                    <li><a href="#" class="sublink">
+                            <i class='bx bx-lock'></i>Accounts
+                        </a>
+                    </li>
+
+
+                    <li><a href="#" class="sublink">
+                            <i class='bx bx-message-square-dots'></i>Messages
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+            <li><a href="#" class="nav_link">Contact</a></li>
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
